@@ -12,7 +12,6 @@ public class ProcessContact implements ProcessContactI {
 
     private static Logger logger = Logger.getLogger("ProcessContact");
 
-    @Bean
     @Transactional
     public void process() throws ProcessContactException {
         try {
