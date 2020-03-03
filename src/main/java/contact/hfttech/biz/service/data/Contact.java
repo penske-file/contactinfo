@@ -12,6 +12,9 @@ import javax.validation.constraints.Size;
 @Setter // Should it be immutable ?? If so leave it out
 @NoArgsConstructor
 public class Contact {
+
+    // might need to put id in here for detached hibernate objects and optimistic locking.
+
     @NotNull
     private String name;
 
