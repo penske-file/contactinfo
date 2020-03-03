@@ -1,7 +1,7 @@
 package contact.hfttech.biz.service.bo;
 
 import contact.hfttech.biz.error.ProcessContactException;
-import org.springframework.context.annotation.Bean;
+import contact.hfttech.biz.service.data.Contact;
 
 import javax.transaction.Transactional;
 import java.util.logging.Level;
@@ -13,7 +13,7 @@ public class ProcessContact implements ProcessContactI {
     private static Logger logger = Logger.getLogger("ProcessContact");
 
     @Transactional
-    public void process() throws ProcessContactException {
+    public void process(Contact contact) throws ProcessContactException {
         try {
             // Persist to data base
             // dao.saveorupdate()

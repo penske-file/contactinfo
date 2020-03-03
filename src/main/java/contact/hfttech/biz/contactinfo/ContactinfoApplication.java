@@ -1,6 +1,7 @@
 package contact.hfttech.biz.contactinfo;
 
 import contact.hfttech.biz.service.bo.ProcessContact;
+import contact.hfttech.biz.service.bo.ProcessContactI;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,7 +19,7 @@ public class ContactinfoApplication {
 	}
 
 	@Bean
-	public ProcessContact getProcessContact() {
+	public ProcessContactI getProcessContact() {
 		return new ProcessContact();
 	}
 
